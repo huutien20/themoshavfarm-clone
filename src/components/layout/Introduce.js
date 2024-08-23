@@ -1,7 +1,6 @@
 import images from '~/assets/images';
-import Button from './Button';
 import { ArrowRight } from 'lucide-react';
-import ProductCard from './ProductCard';
+import { Button, ProductCard } from '../ui';
 
 function Introduce() {
     const products = [
@@ -28,14 +27,12 @@ function Introduce() {
     ];
     return (
         <section className="py-[30px]">
-            <div className="h-full w-full pb-24">
-                <img className="h-full w-full object-cover" src={images.ss3_bg} alt="ss3 bg" />
+            <div className="h-full w-full pb-14">
+                <img className="h-full w-full object-cover" src={images.introduce} alt="introduce" />
             </div>
-            <div className="w-full lg:max-w-[1170px] mx-auto flex flex-col items-center">
-                <div className="max-w-[66.66667%] px-[15px] pb-[30px] flex flex-col items-center">
-                    <p className="font-pacifico text-4xl md:text-5xl !leading-[77px] text-secondary text-center">
-                        Thương hiệu từ nông dân Việt: Ăn “thượng hạng”, Chi “bình dân”
-                    </p>
+            <div className="container flex flex-col items-center">
+                <div className="max-w-[66.66667%] padding-common flex flex-col items-center">
+                    <p className="text-heading">Thương hiệu từ nông dân Việt: Ăn “thượng hạng”, Chi “bình dân”</p>
                     <p className="text-center text-lg mt-3">
                         Sử dụng sản phẩm từ The Moshav Farm không đơn giản chỉ là thưởng thức được những món “thượng
                         hạng”, mà còn là việc được sử dụng những thành quả trên vùng đất thân quen, ủng hộ cộng đồng
@@ -46,7 +43,7 @@ function Introduce() {
                         <ArrowRight className="mt-1" size={20} />
                     </Button>
                 </div>
-                <div className="w-full py-[30px] flex flex-col md:flex-row px-[15px] items-center gap-4">
+                <div className="w-full py-[30px] mobile-col px-[15px] items-center gap-4">
                     {products.map((product) => (
                         <ProductCard
                             key={product.imgURL}

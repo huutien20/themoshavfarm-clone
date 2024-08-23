@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '~/App';
-import { Home } from '~/pages/Home';
-import { Products } from '~/pages/Products';
+import { Home, MembershipCard, Partnership, Products, Recruitment } from '~/pages';
 
 const router = createBrowserRouter([
     {
@@ -15,6 +14,18 @@ const router = createBrowserRouter([
             {
                 path: '/products',
                 element: <Products />,
+            },
+            {
+                path: '/partnership',
+                element: <Partnership />,
+            },
+            {
+                path: '/recruitment',
+                element: <Recruitment />,
+            },
+            {
+                path: '/membership-card',
+                element: <MembershipCard />,
             },
         ],
     },

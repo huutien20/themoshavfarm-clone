@@ -1,11 +1,11 @@
-import images from '../assets/images';
+import images from '../../assets/images';
 
 function Slider() {
     //set h thẻ cha linh hoạt dựa theo thẻ con
     return (
         <section className="relative h-auto w-full flex flex-col items-center">
-            <img src={images.cover} alt="bg1" className="h-[300px] md:h-[500px] w-full object-cover" />
-            <div className="relative -mt-[70px] w-full lg:max-w-[1170px] min-h-[270px] px-[15px] z-10">
+            <img src={images.cover} alt="cover" className="lg:h-[500px] w-full object-cover" />
+            <div className="relative -mt-[50px] md:-mt-[70px] w-full lg:max-w-[1170px] min-h-[270px] px-[15px] z-10">
                 <div className="flex flex-col items-center p-5 bg-primary text-white rounded-lg text-center">
                     <h2 className="text-[44px] text-5xl leading-[57px] uppercase font-bold">The Moshav Farm</h2>
                     <p className="text-[32px] leading-[51px] capitalize">Bình dân hóa nông sản thượng hạng</p>

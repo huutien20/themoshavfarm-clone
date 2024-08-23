@@ -1,18 +1,18 @@
 import { ArrowRight } from 'lucide-react';
-import images from '../assets/images';
-import Button from './Button';
+import images from '~/assets/images';
+import { Button } from '../ui';
 
 function About() {
     return (
         <section className="relative w-full py-[50px]">
-            <img className="absolute top-0 left-0 h-full w-full object-cover" src={images.ss2} alt="ss2-bg" />
-            <div className="relative z-[99] w-full lg:max-w-[1170px] mx-auto flex flex-col">
-                <div className="w-full px-[15px] pb-[30px] flex gap-[30px]">
+            <img className="absolute top-0 left-0 h-full w-full object-cover" src={images.ss2_bg} alt="ss2-bg" />
+            <div className="container flex flex-col z-[99]">
+                <div className="w-full padding-common mobile-col gap-[30px]">
                     <div className="flex flex-col w-full md:w-1/2">
-                        <h1 className="font-pacifico text-4xl md:text-5xl leading-[77px] text-secondary">
+                        <h1 className="font-pacifico text-4xl md:text-5xl !leading-[77px] text-secondary">
                             Về chúng tôi
                         </h1>
-                        <h2 className="mt-1 md:mt-6 font-semibold md:text-[26px] text-2xl leading-[34px] text-[#608800]">
+                        <h2 className="font-semibold md:text-[26px] text-2xl leading-[34px] text-[#608800]">
                             Đi xa để học hỏi
                         </h2>
                         <p className="text-base text-justify mt-2">
@@ -32,28 +32,26 @@ function About() {
                     </div>
                 </div>
             </div>
-            <div className="relative z-[99] w-full lg:max-w-[1170px] px-[15px] mx-auto flex flex-col">
+            <div className="container padding-x-common flex flex-col z-[99]">
                 <div className="w-full lg:max-w-[91.66667%] flex flex-col gap-2">
-                    <p className="font-pacifico text-4xl md:text-5xl leading-[77px] text-secondary text-center">
-                        Nông sản thiên nhiên, an toàn, thân thiện
-                    </p>
-                    <div className="flex gap-3 mt-6">
-                        <div className="w-1/4 h-auto flex flex-col items-center p-3 bg-white border border-secondary rounded-md">
-                            <div className="text-[35px] leading-[56px] text-secondary">5+</div>
+                    <p className="text-heading">Nông sản thiên nhiên, an toàn, thân thiện</p>
+                    <div className="mobile-col gap-3">
+                        <div className="w-full md:w-1/4 h-auto flex flex-col items-center p-3 bg-white border border-secondary rounded-md">
+                            <div className="font-bold text-[35px] leading-[56px] text-secondary">5+</div>
                             <span className="text-[17px] leading-[27px] text-center">Năm hoạt động</span>
                         </div>
-                        <div className="w-1/4 h-auto flex flex-col items-center p-3 bg-white border border-secondary rounded-md">
-                            <div className="text-[35px] leading-[56px] text-secondary">40+</div>
+                        <div className="w-full md:w-1/4 h-auto flex flex-col items-center p-3 bg-white border border-secondary rounded-md">
+                            <div className="font-bold text-[35px] leading-[56px] text-secondary">40+</div>
                             <span className="text-[17px] leading-[27px] text-center">Nhân sự chủ chốt</span>
                         </div>
-                        <div className="w-1/4 h-auto flex flex-col items-center p-3 bg-white border border-secondary rounded-md">
-                            <div className="text-[35px] leading-[56px] text-secondary">56</div>
+                        <div className="w-full md:w-1/4 h-auto flex flex-col items-center p-3 bg-white border border-secondary rounded-md">
+                            <div className="font-bold text-[35px] leading-[56px] text-secondary">56</div>
                             <span className="text-[17px] leading-[27px] text-center">
                                 Hecta (ha) Diện tích canh tác
                             </span>
                         </div>
-                        <div className="w-1/4 h-auto flex flex-col items-center p-3 bg-white border border-secondary rounded-md">
-                            <div className="text-[35px] leading-[56px] text-secondary">5+</div>
+                        <div className="w-full md:w-1/4 h-auto flex flex-col items-center p-3 bg-white border border-secondary rounded-md">
+                            <div className="font-bold text-[35px] leading-[56px] text-secondary">5+</div>
                             <span className="text-[17px] leading-[27px] text-center">
                                 Sản phẩm từ nông sản tại Moshav Farm
                             </span>

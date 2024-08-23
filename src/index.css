@@ -26,3 +26,43 @@ body {
     font-style: normal;
     @apply text-text_primary;
 }
+
+.container {
+    @apply relative w-full md:max-w-[1170px] mx-auto;
+}
+
+.padding-common {
+    padding: 0 15px 30px;
+}
+
+.padding-x-common {
+    padding: 0 15px;
+}
+
+.flex-center {
+    @apply flex justify-center items-center;
+}
+
+.flex-between {
+    @apply flex justify-between items-center;
+}
+
+.mobile-flex {
+    @apply flex md:hidden;
+}
+
+.mobile-col {
+    @apply flex flex-col md:flex-row;
+}
+
+.pc-flex {
+    @apply hidden lg:flex;
+}
+
+.tablet-flex {
+    @apply hidden md:flex;
+}
+
+.text-heading {
+    @apply font-pacifico text-4xl md:text-5xl !leading-[77px] text-secondary text-center;
+}
